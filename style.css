@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.root{
+    width: 1306px;
+}
+
+#Navbar_Menu{
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+#Brand_Logo{
+    flex : 0 0 306px;
+    margin-left : 26px;    
+}
+
+#Nav_Buttons{
+    flex : 0 0 296px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.Nav_Join{
+    width: 72px;
+    height: 25px;
+    background-color: #EDEDED;
+    border-radius: 30px 30px 30px 30px;
+    margin-right: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Nav_Login{
+    width: 72px;
+    height: 25px;
+    margin-right: -16px;
+    background-color: #EDEDED;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav_Login img{
+    margin-top: 1px; 
+}
+
+#Container{
+    background-image: url('img/210219_home_0004_배경.png');
+    background-repeat: no-repeat;
+    height: 1080px;
+    
+}
+
+.Menu_List{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-sun{
+    color: #e76c74;
+}
+.fa-cloud{
+    color : #dbdbdb;
+}
+
+.fa-cloud-showers-heavy{
+    color : #B7B7FC;
+}
+
+#Container{
+    display: flex;
+}
+
+#Sidebar_Left{
+    flex : 0 0 184px;
+    display: flex;
+}
+
+#Main_Container{
+    flex : 0 0 826px;
+}
+
+#Sidebar_Right{
+    flex : 0 0 296px;
+}
+
+.fa-home{
+    color: white;
+}
+
+#Menu_List_Home_Span{
+    color: white;
+}
+
+.fa-bell{
+    color: white;
+}
+
+#Menu_List_Notice_Span{
+    color: white;
+}
+
+.fa-facebook-messenger{
+    color: white;
+}
+
+#Menu_List_Note_Span{
+    color: white;
+}
+
+.fa-align-justify{
+    color: white;
+}
+
+#Menu_List_Recommendation_Span{
+    color: white;
+}
+
+#Menu_List_User_Icon_Text{
+    color : white
+}
+
+.Menu_List{
+    display: flex;
+    flex-direction: column;
+    flex : 0 0 41px
+}
+
+#Menu_List_Home_Li{
+    flex : 0 0 41px
+}
+
+#Menu_List_Notice_Li{
+    flex : 0 0 41px
+}
+
+#Menu_List_Note_Li{
+    flex : 0 0 41px
+}   
+
+#Menu_List_Recommendation_Li{
+    flex : 0 0 41px
+}   
+
+#Menu_List_User_Icon_Container{
+    flex : 0 0 41px
+}
