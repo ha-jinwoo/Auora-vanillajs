@@ -52,7 +52,7 @@ Menu_List.append(Menu_List_Recommendation_Li)
 
 let Menu_List_User_Icon_Container = document.createElement('div');
 Menu_List_User_Icon_Container.id = 'Menu_List_User_Icon_Container';
-Menu_List.append(Menu_List_User_Icon_Container);
+Sidebar_Left.append(Menu_List_User_Icon_Container);
 
 let Menu_List_User_Icon_Img = document.createElement('img');
 Menu_List_User_Icon_Img.id = 'Menu_List_User_Icon_Img';

@@ -11,9 +11,13 @@ Ad_Text.id = 'Ad_Text';
 Ad_Text.textContent = 'Sponsored'
 Ad.append(Ad_Text);
 
+let Ad_Element_Container = document.createElement('div');
+Ad_Element_Container.id = 'Ad_Element_Container';
+Ad.append(Ad_Element_Container);
+
 let Ad_Element1_Container = document.createElement('div');
 Ad_Element1_Container.id = 'Ad_Element1_Container';
-Ad.append(Ad_Element1_Container);
+Ad_Element_Container.append(Ad_Element1_Container);
 
 let Ad_Element1_Img_Container = document.createElement('a');
 Ad_Element1_Img_Container.id = 'Ad_Element1_Img_Container';
@@ -21,24 +25,22 @@ Ad_Element1_Container.append(Ad_Element1_Img_Container);
 
 let Ad_Element1_Img = document.createElement('img');
 Ad_Element1_Img.id = 'Ad_Element1_Img';
-Ad_Element1_Img.src = 'img/210219_home_0001s_0006_모서리가-둥근-직사각형-5.png'
+Ad_Element1_Img.src = 'img/210219_home_0002s_0000s_0000_사각형-1-복사-2.png'
 Ad_Element1_Img_Container.append(Ad_Element1_Img);
 
-let Ad_Element1_Text1 = document.createElement('a');
+let Ad_Element1_Text1 = document.createElement('div');
 Ad_Element1_Text1.id = 'Ad_Element1_Text';
 Ad_Element1_Text1.textContent = '쿠키런 킹덤 지금 설치하세요'
 Ad_Element1_Container.append(Ad_Element1_Text1);
 
-let Ad_Element1_Text2 = document.createElement('a');
+let Ad_Element1_Text2 = document.createElement('div');
 Ad_Element1_Text2.id = 'Ad_Element1_Text2';
 Ad_Element1_Text2.textContent = 'https://www.cookierun-kingdom.com/ko/'
-Ad_Element1_Text2.setAttribute('href','https://www.cookierun-kingdom.com/ko/')
-Ad_Element1_Text2.setAttribute('target','_blank')
 Ad_Element1_Container.append(Ad_Element1_Text2);
 
 let Ad_Element2_Container = document.createElement('div');
 Ad_Element2_Container.id = 'Ad_Element2_Container';
-Ad.append(Ad_Element2_Container);
+Ad_Element_Container.append(Ad_Element2_Container);
 
 let Ad_Element2_Img_Container = document.createElement('a');
 Ad_Element2_Img_Container.id = 'Ad_Element2_Img_Container';
@@ -46,19 +48,18 @@ Ad_Element2_Container.append(Ad_Element2_Img_Container);
 
 let Ad_Element2_Img = document.createElement('img');
 Ad_Element2_Img.id = 'Ad_Element1_Img';
-Ad_Element2_Img.src = 'img/210219_home_0001s_0006_모서리가-둥근-직사각형-5.png'
+Ad_Element2_Img.src = 'img/210219_home_0002s_0000s_0000_사각형-1-복사-2.png'
 Ad_Element2_Img_Container.append(Ad_Element2_Img);
 
-let Ad_Element2_Text1 = document.createElement('a');
-Ad_Element2_Text1.id = 'Ad_Element1_Text';
-Ad_Element2_Text1.textContent = '쿠키런 킹덤 지금 설치하세요'
-Ad_Element2_Container.append(Ad_Element2_Text1);
+let Ad_Element2_Text = document.createElement('div');
+Ad_Element2_Text.id = 'Ad_Element2_Text';
+Ad_Element2_Text.textContent = '카카오 쇼핑 1+1 이벤트 진행중'
 
-let Ad_Element2_Text2 = document.createElement('a');
-Ad_Element2_Text2.id = 'Ad_Element1_Text2';
-Ad_Element2_Text2.textContent = 'https://www.cookierun-kingdom.com/ko/'
-Ad_Element2_Text2.setAttribute('href','https://www.cookierun-kingdom.com/ko/')
-Ad_Element2_Text2.setAttribute('target','_blank')
+Ad_Element2_Container.append(Ad_Element2_Text);
+
+let Ad_Element2_Text2 = document.createElement('div');
+Ad_Element2_Text2.id = 'Ad_Element2_Text2';
+Ad_Element2_Text2.textContent = 'https://store.kakao.com/'
 Ad_Element2_Container.append(Ad_Element2_Text2);
 
 let Recommended_Friends = document.createElement('div');
@@ -89,17 +90,26 @@ Recommended_Friends_Container.append(Recommended_Friends_Element1_Container);
 
 let Recommended_Friends_Element1_Img = document.createElement('img');
 Recommended_Friends_Element1_Img.id = 'Recommended_Friends_Element1_Img';
+Recommended_Friends_Element1_Img.src = 'img/210219_home_0001s_0006_모서리가-둥근-직사각형-5.png'
 Recommended_Friends_Element1_Container.append(Recommended_Friends_Element1_Img);
+
+let Recommended_Friends_Element1_TextContainer = document.createElement('div');
+Recommended_Friends_Element1_TextContainer.id = 'Recommended_Friends_Element1_TextContainer';
+Recommended_Friends_Element1_Container.append(Recommended_Friends_Element1_TextContainer)
 
 let Recommended_Friends_Element1_Text = document.createElement('div');
 Recommended_Friends_Element1_Text.id = 'Recommended_Friends_Element1_Text';
 Recommended_Friends_Element1_Text.textContent = '조르디';
-Recommended_Friends_Element1_Container.append(Recommended_Friends_Element1_Text);
+Recommended_Friends_Element1_TextContainer.append(Recommended_Friends_Element1_Text);
 
-let Recommended_Friends_Element1_Button = document.createElement('button');
+let Recommended_Friends_Element1_Button_Container = document.createElement('div');
+Recommended_Friends_Element1_Button_Container.id = 'Recommended_Friends_Element1_Button_Container';
+Recommended_Friends_Element1_TextContainer.append(Recommended_Friends_Element1_Button_Container)
+
+let Recommended_Friends_Element1_Button = document.createElement('div');
 Recommended_Friends_Element1_Button.id = 'Recommended_Friends_Element1_Button';
 Recommended_Friends_Element1_Button.textContent = '친구추가';
-Recommended_Friends_Element1_Container.append(Recommended_Friends_Element1_Button);
+Recommended_Friends_Element1_Button_Container.append(Recommended_Friends_Element1_Button);
 
 let Recommended_Friends_Element2_Container = document.createElement('div');
 Recommended_Friends_Element2_Container.id = 'Recommended_Friends_Element2_Container';
@@ -107,17 +117,26 @@ Recommended_Friends_Container.append(Recommended_Friends_Element2_Container);
 
 let Recommended_Friends_Element2_Img = document.createElement('img');
 Recommended_Friends_Element2_Img.id = 'Recommended_Friends_Element2_Img';
+Recommended_Friends_Element2_Img.src = 'img/210219_home_0001s_0006_모서리가-둥근-직사각형-5.png'
 Recommended_Friends_Element2_Container.append(Recommended_Friends_Element2_Img);
+
+let Recommended_Friends_Element2_TextContainer = document.createElement('div');
+Recommended_Friends_Element2_TextContainer.id = 'Recommended_Friends_Element2_TextContainer';
+Recommended_Friends_Element2_Container.append(Recommended_Friends_Element2_TextContainer)
 
 let Recommended_Friends_Element2_Text = document.createElement('div');
 Recommended_Friends_Element2_Text.id = 'Recommended_Friends_Element2_Text';
 Recommended_Friends_Element2_Text.textContent = '앙몬드';
-Recommended_Friends_Element2_Container.append(Recommended_Friends_Element2_Text);
+Recommended_Friends_Element2_TextContainer.append(Recommended_Friends_Element2_Text);
 
-let Recommended_Friends_Element2_Button = document.createElement('button');
+let Recommended_Friends_Element2_Button_Container = document.createElement('div');
+Recommended_Friends_Element2_Button_Container.id = 'Recommended_Friends_Element2_Button_Container';
+Recommended_Friends_Element2_TextContainer.append(Recommended_Friends_Element2_Button_Container)
+
+let Recommended_Friends_Element2_Button = document.createElement('div');
 Recommended_Friends_Element2_Button.id = 'Recommended_Friends_Element2_Button';
 Recommended_Friends_Element2_Button.textContent = '친구추가';
-Recommended_Friends_Element2_Container.append(Recommended_Friends_Element2_Button);
+Recommended_Friends_Element2_Button_Container.append(Recommended_Friends_Element2_Button);
 
 let Recommended_Friends_Element3_Container = document.createElement('div');
 Recommended_Friends_Element3_Container.id = 'Recommended_Friends_Element3_Container';
@@ -125,17 +144,26 @@ Recommended_Friends_Container.append(Recommended_Friends_Element3_Container);
 
 let Recommended_Friends_Element3_Img = document.createElement('img');
 Recommended_Friends_Element3_Img.id = 'Recommended_Friends_Element3_Img';
+Recommended_Friends_Element3_Img.src = 'img/210219_home_0001s_0006_모서리가-둥근-직사각형-5.png'
 Recommended_Friends_Element3_Container.append(Recommended_Friends_Element3_Img);
+
+let Recommended_Friends_Element3_TextContainer = document.createElement('div');
+Recommended_Friends_Element3_TextContainer.id = 'Recommended_Friends_Element3_TextContainer';
+Recommended_Friends_Element3_Container.append(Recommended_Friends_Element3_TextContainer)
 
 let Recommended_Friends_Element3_Text = document.createElement('div');
 Recommended_Friends_Element3_Text.id = 'Recommended_Friends_Element3_Text';
 Recommended_Friends_Element3_Text.textContent = '앙몬드';
-Recommended_Friends_Element3_Container.append(Recommended_Friends_Element3_Text);
+Recommended_Friends_Element3_TextContainer.append(Recommended_Friends_Element3_Text);
 
-let Recommended_Friends_Element3_Button = document.createElement('button');
+let Recommended_Friends_Element3_Button_Container = document.createElement('div');
+Recommended_Friends_Element3_Button_Container.id = 'Recommended_Friends_Element3_Button_Container';
+Recommended_Friends_Element3_TextContainer.append(Recommended_Friends_Element3_Button_Container)
+
+let Recommended_Friends_Element3_Button = document.createElement('div');
 Recommended_Friends_Element3_Button.id = 'Recommended_Friends_Element3_Button';
 Recommended_Friends_Element3_Button.textContent = '친구추가';
-Recommended_Friends_Element3_Container.append(Recommended_Friends_Element3_Button);
+Recommended_Friends_Element3_Button_Container.append(Recommended_Friends_Element3_Button);
 
 let Friends_Weather = document.createElement('div');
 Friends_Weather.id = 'Friends_Weather';
@@ -150,10 +178,14 @@ Friends_Weather_Text.id = 'Friends_Weather_Text';
 Friends_Weather_Text.textContent = `My Friend's Weather`
 Friends_Weather_Text_Container.append(Friends_Weather_Text);
 
+let Friends_Weather_Setting_Container = document.createElement('div');
+Friends_Weather_Setting_Container.id = 'Friends_Weather_Setting_Container';
+Friends_Weather_Text_Container.append(Friends_Weather_Setting_Container);
+
 let Friends_Weather_Setting = document.createElement('div');
 Friends_Weather_Setting.id = 'Friends_Weather_Setting';
 Friends_Weather_Setting.textContent = '...'
-Friends_Weather_Text_Container.append(Friends_Weather_Setting);
+Friends_Weather_Setting_Container.append(Friends_Weather_Setting);
 
 let Friends_Weather_Container = document.createElement('div');
 Friends_Weather_Container.id = 'Friends_Weather_Container';
@@ -167,9 +199,10 @@ let Friends_Weather_Element1_Counter = document.createElement('div');
 Friends_Weather_Element1_Counter.id = 'Friends_Weather_Element1_Counter';
 Friends_Weather_Element1_Container.append(Friends_Weather_Element1_Counter);
 
-let Friends_Weather_Element1_Weather = document.createElement('img');
+let Friends_Weather_Element1_Weather = document.createElement('i');
 Friends_Weather_Element1_Weather.id = 'Friends_Weather_Element1_Weather';
-Friends_Weather_Element1_Weather.src = 'img/210219_home_0001s_0001s_0000_sun.png'
+Friends_Weather_Element1_Weather.classList.add('fas')
+Friends_Weather_Element1_Weather.classList.add('fa-sun')
 Friends_Weather_Element1_Container.append(Friends_Weather_Element1_Weather);
 
 let Friends_Weather_Element2_Container = document.createElement('div')
@@ -180,9 +213,10 @@ let Friends_Weather_Element2_Counter = document.createElement('div');
 Friends_Weather_Element2_Counter.id = 'Friends_Weather_Element2_Counter';
 Friends_Weather_Element2_Container.append(Friends_Weather_Element2_Counter);
 
-let Friends_Weather_Element2_Weather = document.createElement('img');
+let Friends_Weather_Element2_Weather = document.createElement('i');
 Friends_Weather_Element2_Weather.id = 'Friends_Weather_Element2_Weather';
-Friends_Weather_Element2_Weather.src = 'img/210219_home_0001s_0001s_0001_cloud.png'
+Friends_Weather_Element2_Weather.classList.add('fas')
+Friends_Weather_Element2_Weather.classList.add('fa-cloud')
 Friends_Weather_Element2_Container.append(Friends_Weather_Element2_Weather);
 
 let Friends_Weather_Element3_Container = document.createElement('div')
@@ -193,9 +227,10 @@ let Friends_Weather_Element3_Counter = document.createElement('div');
 Friends_Weather_Element3_Counter.id = 'Friends_Weather_Element3_Counter';
 Friends_Weather_Element3_Container.append(Friends_Weather_Element3_Counter);
 
-let Friends_Weather_Element3_Weather = document.createElement('img');
+let Friends_Weather_Element3_Weather = document.createElement('i');
 Friends_Weather_Element3_Weather.id = 'Friends_Weather_Element3_Weather';
-Friends_Weather_Element3_Weather.src = 'img/210219_home_0001s_0001s_0002_rain.png'
+Friends_Weather_Element3_Weather.classList.add('fas')
+Friends_Weather_Element3_Weather.classList.add('fa-cloud-showers-heavy')
 Friends_Weather_Element3_Container.append(Friends_Weather_Element3_Weather);
 
 let Friends_Weather_Element4_Container = document.createElement('div')
@@ -206,9 +241,10 @@ let Friends_Weather_Element4_Counter = document.createElement('div');
 Friends_Weather_Element4_Counter.id = 'Friends_Weather_Element4_Counter';
 Friends_Weather_Element4_Container.append(Friends_Weather_Element4_Counter);
 
-let Friends_Weather_Element4_Weather = document.createElement('img');
+let Friends_Weather_Element4_Weather = document.createElement('i');
 Friends_Weather_Element4_Weather.id = 'Friends_Weather_Element4_Weather';
-Friends_Weather_Element4_Weather.src = 'img/210219_home_0001s_0001s_0003_mood.png'
+Friends_Weather_Element4_Weather.classList.add('fas')
+Friends_Weather_Element4_Weather.classList.add('fa-moon')
 Friends_Weather_Element4_Container.append(Friends_Weather_Element4_Weather);
 
 let Realtime_Weather = document.createElement('div');

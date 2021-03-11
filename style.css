@@ -64,7 +64,6 @@ body{
     background-image: url('img/210219_home_0004_배경.png');
     background-repeat: no-repeat;
     height: 1080px;
-    
 }
 
 .Menu_List{
@@ -91,6 +90,9 @@ body{
 #Sidebar_Left{
     flex : 0 0 184px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/leftbg.png');
 }
 
 #Main_Container{
@@ -99,38 +101,55 @@ body{
 
 #Sidebar_Right{
     flex : 0 0 296px;
+    background-image: url('img/rightbg.png');
 }
 
 .fa-home{
     color: white;
+    font-size: 40px;
 }
 
 #Menu_List_Home_Span{
     color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 13px;
 }
 
 .fa-bell{
     color: white;
+    font-size: 40px;
 }
 
 #Menu_List_Notice_Span{
     color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 13px;
 }
 
 .fa-facebook-messenger{
     color: white;
+    font-size: 40px;
 }
 
 #Menu_List_Note_Span{
     color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 13px;
 }
 
 .fa-align-justify{
     color: white;
+    font-size: 40px;
 }
 
 #Menu_List_Recommendation_Span{
     color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 13px;
 }
 
 #Menu_List_User_Icon_Text{
@@ -140,25 +159,542 @@ body{
 .Menu_List{
     display: flex;
     flex-direction: column;
-    flex : 0 0 41px
+    margin-top: 59px;
+    flex: 0 0 708px;
 }
 
 #Menu_List_Home_Li{
-    flex : 0 0 41px
+    flex : 0 0 90px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 #Menu_List_Notice_Li{
-    flex : 0 0 41px
+    flex : 0 0 90px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 #Menu_List_Note_Li{
-    flex : 0 0 41px
+    flex : 0 0 90px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }   
 
 #Menu_List_Recommendation_Li{
-    flex : 0 0 41px
+    flex : 0 0 90px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }   
 
 #Menu_List_User_Icon_Container{
-    flex : 0 0 41px
+    flex: 0 0 234px;
+    cursor: pointer;
+}
+
+#Main_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/midbg.png');
+}
+#Post_Header{
+    background-color: white;
+    width: 675px;
+    flex : 0 0 50px;
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+
+}
+#Post_Main{
+    width: 675px;
+    background-color: white;
+    margin-top: 34px;
+    flex : 0 0 98px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+    align-items: center;
+}
+
+#Selector_Wheatherbox{
+    width: 48px;
+    height: 48px;
+}
+#ShareButton{
+    width: 77px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url('img/210219_home_0001s_0002_모서리가-둥근-직사각형-5-복사-4.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ViewButton{
+    width: 59px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url('img/210219_home_0000s_0002s_0002_모서리가-둥근-직사각형-7.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 19px;
+}
+
+#Checkbox_Weather_List{
+    margin-left: 29px;
+}
+
+#SelectFillter{
+    margin-left: 90px;
+}
+
+.Checkbox_Weather_Text{
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+#Search_Container{
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px 5px 5px 5px;
+    width: 143px;
+}
+
+#SearchInput{
+    border : 0;
+    background-color: #e7e7e7;
+    border-radius: 5px 5px 5px 5px;
+    width: 120px;
+}
+
+#SelectFillter{
+    background-color: #e7e7e7;
+}
+
+#Selector_WheatherIcon{
+    margin-left: 29px;
+}
+
+#Selector_WheatherBox_Container{
+    margin-left: 17px;
+}
+
+#Selector_Load_Media_Container{
+    margin-left: 133px;
+}
+
+#ShareButton{
+    margin-left: 43px;
+}
+
+#Selector_Wheatherbox_Sun{
+    font-size: 24px;
+}
+#Selector_Wheatherbox_Cloud{
+    margin-left: 16px;
+    font-size: 24px;
+}
+#Selector_Wheatherbox_Rain{
+    margin-left: 16px;
+    font-size: 24px;
+}
+#Selector_Wheatherbox_Moon{
+    margin-left: 16px;
+    font-size: 24px;
+    color:rgb(218, 160, 218);
+}
+#Selector_Wheather_Text{
+    font-size: 13px;
+}
+
+#Selector_Load_Media_Camera{
+    font-size: 20px;
+}
+
+#Selector_Load_Media_Picture{
+    font-size: 20px;
+}
+
+#Selector_Load_Media_Video{
+    font-size: 20px;
+}
+
+#Selector_Load_Media_Container{
+    display: flex;
+    width: 122px;
+    justify-content: space-between;
+}
+
+#Selector_Load_Media_Camera_Container{
+    background-color: #D1D1D1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Selector_Load_Media_Picture_Container{
+    background-color: #D1D1D1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Selector_Load_Media_Video_Container{
+    background-color: #D1D1D1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Sidebar_Right{
+    display: flex;
+    flex-direction: column;
+}
+
+#Ad{
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    width: 296px;
+    height: 230px;
+}
+
+#Ad_Text{
+    margin-left: 41px;
+    margin-bottom: 16px;
+    color : white;
+}
+
+#Ad_Element_Container{
+    display: flex;
+}
+
+#Ad_Element1_Container{
+    display: flex;
+    flex-direction: column;
+}
+
+#Ad_Element2_Container{
+    display: flex;
+    flex-direction: column;
+}
+
+#Recommended_Friends{
+    margin-top: 15px;
+    width: 296px;
+}
+
+#Friends_Weather_Text_Container{
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+
+#Realtime_Weather{
+    margin-top: 57px;
+}
+
+#Recommended_Friends_Text_Container{
+    display: flex;
+}
+
+#Recommended_Friends_Text{
+    margin-left: 41px;
+    color : white;
+}
+
+#Recommended_Friends_Setting{
+    margin-left: auto;
+    font-size: 24px;
+    margin-right: 41px;
+    display: flex;
+    color: white;
+}
+
+#Ad_Element_Container{
+    display: flex;
+}
+
+#Ad_Element1_Container{
+    width: 148px;
+}
+
+#Ad_Element1_Img_Container{
+    text-align: center;
+}
+
+#Ad_Element1_Text{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+#Ad_Element1_Text2{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(138, 138, 138);
+}
+
+#Ad_Element2_Container{
+    width: 148px;
+}
+
+#Ad_Element2_Img_Container{
+    text-align: center;
+}
+
+#Ad_Element2_Text{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+#Ad_Element2_Text2{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(138, 138, 138);
+}
+
+#Recommended_Friends_Element1_Container{
+    display: flex;
+}
+
+#Recommended_Friends_Element2_Container{
+    display: flex;
+}
+
+#Recommended_Friends_Element3_Container{
+    display: flex;
+}
+
+#Recommended_Friends_Element1_Img{
+    margin-left: 41px;
+}
+
+#Recommended_Friends_Element2_Img{
+    margin-left: 41px;
+}
+
+#Recommended_Friends_Element3_Img{
+    margin-left: 41px;
+}
+
+#Recommended_Friends_Element1_Container{
+    margin-top: 20px;
+}
+
+#Recommended_Friends_Element1_TextContainer{
+    margin-left: 16px;
+}
+
+#Recommended_Friends_Element1_Text{
+    margin-left: 17px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+#Recommended_Friends_Element1_Button{
+    font-size: 10px;
+}
+
+#Recommended_Friends_Element1_Button_Container{
+    width: 72px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Recommended_Friends_Element2_Container{
+    margin-top: 16px;
+}
+
+#Recommended_Friends_Element2_TextContainer{
+    margin-left: 16px;
+}
+
+#Recommended_Friends_Element2_Text{
+    margin-left: 17px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+#Recommended_Friends_Element2_Button{
+    font-size: 10px;
+}
+
+#Recommended_Friends_Element2_Button_Container{
+    width: 72px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Recommended_Friends_Element3_Container{
+    margin-top: 16px;
+}
+
+#Recommended_Friends_Element3_TextContainer{
+    margin-left: 16px;
+}
+
+#Recommended_Friends_Element3_Text{
+    margin-left: 17px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+#Recommended_Friends_Element3_Button{
+    font-size: 10px;
+}
+
+#Recommended_Friends_Element3_Button_Container{
+    width: 72px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Friends_Weather_Text_Container{
+    display: flex;
+    
+}
+
+#Friends_Weather_Text{
+    color: white;
+    margin-left: 41px;
+}
+
+#Friends_Weather_Setting_Container{
+    color: white;
+    margin-left: auto;
+    font-size: 24px;
+    margin-right: 41px;
+}
+
+#Friends_Weather_Container{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end
+}
+
+#Friends_Weather_Element1_Weather{
+    font-size: 25px;
+    margin-top: 11px;
+}
+
+#Friends_Weather_Element2_Weather{
+    font-size: 25px;
+    margin-top: 11px;
+}
+
+#Friends_Weather_Element3_Weather{
+    font-size: 25px;
+    margin-top: 11px;
+}
+
+#Friends_Weather_Element4_Weather{
+    font-size: 25px;
+    margin-top: 11px;
+    color: rgb(218, 160, 218);
+}
+
+#Friends_Weather_Element1_Counter{
+    background-color: white;
+    width: 22px;
+    height: 97px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#Friends_Weather_Element1_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Friends_Weather_Element2_Counter{
+    background-color: white;
+    width: 22px;
+    height: 25px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#Friends_Weather_Element2_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Friends_Weather_Element3_Counter{
+    background-color: white;
+    width: 22px;
+    height: 77px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#Friends_Weather_Element3_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Friends_Weather_Element4_Counter{
+    background-color: white;
+    width: 22px;
+    height: 61px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#Friends_Weather_Element4_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Realtime_Weather_Text{
+    color: white;
+    margin-left: 41px;
+}
+
+#Realtime_Weather_Main_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+#Realtime_Weather_Main_MinTemp{
+    margin-left: 20px;
+    color: white;
+}
+
+#Realtime_Weather_Main_MaxTemp{
+    margin-left: 7px;
+    color: white;
 }
